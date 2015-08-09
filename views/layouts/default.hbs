@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{page_title}}</title>
+    	<link rel="stylesheet" type="text/css" href="/blog/assets/css/main.min.css" />
+    	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+</head>
+<body class="page {{#if page_section}}page--{{page_section}}{{/if}}">
+
+<div class="wrapper">
+
+	<header class="header-primary {{#if page_section}}header--{{page_section}}{{/if}}">
+		<span class="header__title"><a href="/">shaun.church</a>/{{page_section}}</span>
+		<nav class="nav-primary">
+			<a class="nav-primary__link" href="/">/</a>
+			<a class="nav-primary__link" href="/music">/music</a>
+			<a class="nav-primary__link" href="/apps">/apps</a>
+			<a class="nav-primary__link" href="/blog">/blog</a>
+			<a class="nav-primary__link" href="/photos">/photos</a>
+			<a class="nav-primary__link" href="/about">/about</a>		
+		</nav>
+	</header>
+
+    {{{body}}}
+
+</div>
+
+</body>
+</html>

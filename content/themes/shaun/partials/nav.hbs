@@ -1,0 +1,16 @@
+{{#if image}}
+ <header class="header-primary header-cover" style="background-image: url({{image}})">
+{{else}}
+  <header class="header-primary {{#if @blog.cover}} header-cover" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+{{/if}}
+
+    <span class="header__title"><a href="/">shaun.church</a>/blog</span>
+    <nav class="nav-primary">
+        <a class="nav-primary__link" href="/">/</a>
+        <a class="nav-primary__link" href="/music">/music</a>
+        <a class="nav-primary__link" href="/apps">/apps</a>
+        <a class="nav-primary__link" href="/blog">/blog</a>
+        <a class="nav-primary__link" href="/photos">/photos</a>
+        <a class="nav-primary__link" href="/about">/about</a>       
+    </nav>
+</header>

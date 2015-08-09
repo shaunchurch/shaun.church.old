@@ -34,7 +34,7 @@ config = {
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
         // Change this to your Ghost blogs published URL.
-        url: 'http://localhost:2368',
+        url: 'http://localhost:2368/blog',
 
         // Example mail config
         // Visit http://support.ghost.org/mail for instructions
@@ -65,7 +65,8 @@ config = {
             port: '2368'
         },
         paths: {
-            contentPath: path.join(__dirname, '/content/')
+            contentPath: path.join(__dirname, '/content/'),
+            subdir: path.join(__dirname, '/blog')
         }
     },
 

@@ -1,0 +1,6 @@
+<nav class="primary-nav">    
+    {{#foreach navigation}}
+        <a class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation" href="{{url absolute="true"}}">{{label}}</a>
+    {{/foreach}}
+    <a class="nav-subscribe" href="{{@blog.url}}/rss/">Subscribe</a>
+</nav>
